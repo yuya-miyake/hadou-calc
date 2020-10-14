@@ -26,17 +26,17 @@
                 <h6>全休符</h6>
                 <dl id="barriers" class="row">
                     <dt class="col-8"> 4時間</dt>
-                    <dd class="col-4"><input type="number" data-jewel="230" data-hours="4" class="amount" min="0"> 個</dd>
+                    <dd class="col-4"><input type="number" pattern="[0-9]*" inputmode="numeric" data-jewel="230" data-hours="4" class="amount" min="0"> 個</dd>
                     <dt class="col-8"> 8時間</dt>
-                    <dd class="col-4"><input type="number" data-jewel="600" data-hours="8" class="amount" min="0"> 個</dd>
+                    <dd class="col-4"><input type="number" pattern="[0-9]*" inputmode="numeric" data-jewel="600" data-hours="8" class="amount" min="0"> 個</dd>
                     <dt class="col-8">24時間</dt>
-                    <dd class="col-4"><input type="number" data-jewel="2300" data-hours="24" class="amount" min="0"> 個</dd>
+                    <dd class="col-4"><input type="number" pattern="[0-9]*" inputmode="numeric" data-jewel="2300" data-hours="24" class="amount" min="0"> 個</dd>
                 </dl>
                 
                 <h6>占拠時間</h6>
                 <dl id="occupation" class="row">
                     <dt class="col-8"><a href="#" id="same_as_barriers">全休符と同時間を設定する</a></dt>
-                    <dd class="col-4"><input type="number" class="amount" min="0"> 時間</dd>
+                    <dd class="col-4"><input type="number" pattern="[0-9]*" inputmode="numeric" class="amount" min="0"> 時間</dd>
                 </dl>
                 
                 <h6>貢物(１回あたり）</h6>
@@ -51,7 +51,7 @@
                 <h6>収入</h6>
                 <div id="acquired">
                     <dl class="row">
-                        <dt class="col-8">宝玉購入</dt>
+                        <dt class="col-8">宝玉</dt>
                         <dd class="col-4"><span class="jewel"></span>個相当</dd>
                     </dl>
                 </div>
@@ -70,7 +70,7 @@
             <template id="item-template">
                 <dt class="col-8">{{name}}</dt>
                 <dd class="col-4">
-                    <input type="number" data-name="{{name}}" data-price="{{values.price}}" data-jewel="{{values.jewel}}" class="amount" min="0"> 個
+                    <input type="number" pattern="[0-9]*" inputmode="numeric" data-name="{{name}}" data-price="{{values.price}}" data-jewel="{{values.jewel}}" class="amount" min="0"> 個
                 </dd>
             </template>
         </div>
